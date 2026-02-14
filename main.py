@@ -31,7 +31,7 @@ def listen_for_messages(thread_key):
                 if message and last_time != time.localtime(message["timestamp"]):
                     last_time = time.localtime(message["timestamp"])
                     t = time.strftime("%H:%M:%S", time.localtime(message["timestamp"]))
-                    print(f"[{t}] {message['text']}")
+                    print(f"[{t}] `{message['text']}`")
             elif resp.status_code == 500:
                 pass
             else:
@@ -48,16 +48,16 @@ def listen_for_messages(thread_key):
 
 def main():
     parser = argparse.ArgumentParser(description="Radio Messaging Client")
-    parser.add_argument("action", choices=["send", "listen"], help="Action to perform")
+    parser.add_argument("action", choices=["tx", "rx"], help="Action to perform")
     parser.add_argument("--key", required=True, help="Thread/chat room key")
     parser.add_argument("--text", help="Message text (for 'send')")
     args = parser.parse_args()
-    if args.action == "send":
+    if args.action == "tx":
         if not args.text:
-            print("--text is required for 'send'")
+            print("--text is required for 'tx'")
             sys.exit(1)
         send_message(args.key, args.text)
-    elif args.action == "listen":
+    elif args.action == "rx":
         listen_for_messages(args.key)
 
 if __name__ == "__main__":
