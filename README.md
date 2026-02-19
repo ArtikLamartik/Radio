@@ -59,30 +59,47 @@ pyttsx3
 
 To Transmit (TX):
   `python main.py --cid <your Channel ID> tx --text "<your text>"`
+
   or
+
   `python3 main.py --cid <your Channel ID> tx --text "<your text>"`
+
   Example:
+
     `python main.py --cid "1" tx --text "GT, WRLD!"`
+  
     or
+  
     `python3 main.py --cid "1" tx --text "GT, WRLD!"`
 
 To receive (RX):
   With TTS:
     `python main.py --cid "<your Channel ID>" rx --tts`
+
     or
+
     `python3 main.py --cid "<your Channel ID>" rx --tts`
+
     Example:
       `python main.py --cid "1" rx --tts`
+  
       or
+
       `python3 main.py --cid "1" rx --tts`
+
   Without TTS:
     `python main.py --cid <your Channel ID> rx`
+
     or
+
     `python3 main.py --cid <your Channel ID> rx`
+
     Example:
       `python main.py --cid "1" rx --tts`
+
       or
-       `python3 main.py --cid "1" rx --tts`
+
+      `python3 main.py --cid "1" rx --tts`
 
 ## Contributors
 <a href="https://github.com/ArtikLamartik/ITRC/graphs/contributors">
