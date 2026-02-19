@@ -10,6 +10,7 @@
     - [Requirements](#Requirements)
     - [Installation](#Installation)
     - [Usage](#Usage)
+- [Easter Eggs](#Easter-Eggs)
 - [Contributors](#Contributors)
 
 ## How to use ITRC effectively
@@ -103,7 +104,16 @@ Example:
 python main.py --cid "1" rx --tts
 ```
 
+## Easter Eggs
+
+The next Channel ID's are special:
+  - "random"
+  - "date"
+  - "time"
+  - "ip"
+
 ## Contributors
+
 <a href="https://github.com/ArtikLamartik/ITRC/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=ArtikLamartik/ITRC&max=2000&columns=20" />
 </a>
