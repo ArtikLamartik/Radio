@@ -81,19 +81,27 @@ python main.py --cid "1" tx --text "GT, WRLD!"
 
 To receive (RX) (without TTS):
 
-```python main.py --cid <your Channel ID> rx```
+```bash
+python main.py --cid <your Channel ID> rx
+```
 
 Example:
 
-```python main.py --cid "1" rx --tts```
+```bash
+python main.py --cid "1" rx --tts
+```
 
 To receive (RX) (with TTS):
 
-```python main.py --cid "<your Channel ID>" rx --tts```
+```bash
+python main.py --cid "<your Channel ID>" rx --tts
+```
 
 Example:
 
-```python main.py --cid "1" rx --tts```
+```bash
+python main.py --cid "1" rx --tts
+```
 
 ## Contributors
 <a href="https://github.com/ArtikLamartik/ITRC/graphs/contributors">
