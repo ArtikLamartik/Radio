@@ -87,12 +87,12 @@ def rx(channel_id, use_tts=False):
                 pass
             else:
                 print(f"[SYS] Server error: {resp.status_code}")
-            time.sleep(2.1)
+            time.sleep(1.1)
         except KeyboardInterrupt:
             print("[SYS] Goodbye!")
             sys.exit(0)
         except:
-            time.sleep(2.1)
+            time.sleep(1.1)
 
 def main():
     parser = argparse.ArgumentParser(description="ITRC Client")
@@ -111,3 +111,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
