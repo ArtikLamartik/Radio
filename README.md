@@ -44,7 +44,7 @@ To go back to the main page:
 
 ### The Python Client
 
-You can find it at <a href="https://github.com/ArtikLamartik/ITRC/blob/main/PythonClient/main.py">PythonClient/main.py<\a>
+You can find it at [PythonClient/main.py](https://github.com/ArtikLamartik/ITRC/blob/main/PythonClient/main.py)
 
 #### Requirements
 
