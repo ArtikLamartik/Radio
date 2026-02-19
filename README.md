@@ -78,44 +78,44 @@ To Transmit (TX):
 
   Example:
 
-    ```bash
-    python main.py --cid "1" tx --text "GT, WRLD!"
-    ```
+  ```bash
+  python main.py --cid "1" tx --text "GT, WRLD!"
+  ```
   
-    or
+  or
   
-    ```bash
-    python3 main.py --cid "1" tx --text "GT, WRLD!"
-    ```
+  ```bash
+  python3 main.py --cid "1" tx --text "GT, WRLD!"
+  ```
 
 To receive (RX):
   With TTS:
-    ```python main.py --cid "<your Channel ID>" rx --tts```
+  ```python main.py --cid "<your Channel ID>" rx --tts```
 
-    or
+  or
 
-    ```python3 main.py --cid "<your Channel ID>" rx --tts```
+  ```python3 main.py --cid "<your Channel ID>" rx --tts```
 
-    Example:
-      ```python main.py --cid "1" rx --tts```
-  
-      or
+  Example:
+  ```python main.py --cid "1" rx --tts```
 
-      ```python3 main.py --cid "1" rx --tts```
+  or
+
+  ```python3 main.py --cid "1" rx --tts```
 
   Without TTS:
-    ```python main.py --cid <your Channel ID> rx```
+  ```python main.py --cid <your Channel ID> rx```
 
-    or
+  or
 
-    ```python3 main.py --cid <your Channel ID> rx```
+  ```python3 main.py --cid <your Channel ID> rx```
 
-    Example:
-      ```python main.py --cid "1" rx --tts```
+  Example:
+    ```python main.py --cid "1" rx --tts```
 
-      or
+  or
 
-      ```python3 main.py --cid "1" rx --tts```
+  ```python3 main.py --cid "1" rx --tts```
 
 ## Contributors
 <a href="https://github.com/ArtikLamartik/ITRC/graphs/contributors">
