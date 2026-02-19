@@ -65,63 +65,35 @@ requests
 
 #### Usage
 
-To Transmit (TX):
+> **Note:** Depending on your environment configuration, you may need to use `python` instead of `python3` in the commands below.
 
-  ```bash
-  python main.py --cid <your Channel ID> tx --text "<your text>"
-  ```
+To transmit (TX):
 
-  or
+```bash
+python main.py --cid <your Channel ID> tx --text "<your text>"
+```
 
-  ```bash
-  python3 main.py --cid <your Channel ID> tx --text "<your text>"
-  ```
+Example:
 
-  Example:
+```bash
+python main.py --cid "1" tx --text "GT, WRLD!"
+```
 
-  ```bash
-  python main.py --cid "1" tx --text "GT, WRLD!"
-  ```
-  
-  or
-  
-  ```bash
-  python3 main.py --cid "1" tx --text "GT, WRLD!"
-  ```
+To receive (RX) (without TTS):
 
-To receive (RX):
+```python main.py --cid <your Channel ID> rx```
 
-  With TTS:
+Example:
 
-  ```python main.py --cid "<your Channel ID>" rx --tts```
+```python main.py --cid "1" rx --tts```
 
-  or
+To receive (RX) (with TTS):
 
-  ```python3 main.py --cid "<your Channel ID>" rx --tts```
+```python main.py --cid "<your Channel ID>" rx --tts```
 
-  Example:
+Example:
 
-  ```python main.py --cid "1" rx --tts```
-
-  or
-
-  ```python3 main.py --cid "1" rx --tts```
-
-  Without TTS:
-
-  ```python main.py --cid <your Channel ID> rx```
-
-  or
-
-  ```python3 main.py --cid <your Channel ID> rx```
-
-  Example:
-
-  ```python main.py --cid "1" rx --tts```
-
-  or
-
-  ```python3 main.py --cid "1" rx --tts```
+```python main.py --cid "1" rx --tts```
 
 ## Contributors
 <a href="https://github.com/ArtikLamartik/ITRC/graphs/contributors">
