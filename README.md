@@ -4,8 +4,12 @@
 - [How to use ITRC effectively](#How-to-use-ITRC-effectively)
   - [The Web Client](#The-Web-Client)
     - [To Transmit (TX)](#Transmit-tx)
-    - [To Receive  (RX)](#Receive--rx)
+    - [To Receive  (RX)](#Receive-rx)
     - [To go back to the main page](#Back-to-the-main-page)
+  - [The Python Client](#The-Python-Client)
+    - [Requirements](#Requirements)
+    - [Steps](#Steps)
+- [Contributors](#Contributors)
 
 ## How to use ITRC effectively
 
@@ -21,7 +25,7 @@ To transmit to a channel you need to:
   - Input the wanted Channel ID in the "Channel ID" place in the TX section.
   - Input the wanted message in the "Message" place in the TX section.
 
-#### Receive  (RX)
+#### Receive (RX)
 
 To receive from a channel (without TTS) you need to:
   - Input the wanted Channel ID in the "Channel ID" place in the RX section.
@@ -37,7 +41,50 @@ To receive from a channel (with TTS) you need to:
 To go back to the main page:
   - Press the "← Back" Button that is under the Big Blue ITRC Title.
 
+### The Python Client
+
+You can find it at <a href="https://github.com/ArtikLamartik/ITRC/blob/main/PythonClient/main.py">PythonClient/main.py<\a>
+
+#### Requirements
+
+```
+Python
+pyttsx3
+```
+
+#### Steps
+  1. Install Python from <a href="https://www.python.org/">Python.org<\a>
+  2. Install the Python file from <a href="https://github.com/ArtikLamartik/ITRC/blob/main/PythonClient/main.py">PythonClient/main.py<\a>
+  3. Install pyttsx3 with `pip install pyttsx3`
+
+To Transmit (TX):
+  `python main.py --cid <your Channel ID> tx --text "<your text>"`
+  or
+  `python3 main.py --cid <your Channel ID> tx --text "<your text>"`
+  Example:
+    `python main.py --cid "1" tx --text "GT, WRLD!"`
+    or
+    `python3 main.py --cid "1" tx --text "GT, WRLD!"`
+
+To receive (RX):
+  With TTS:
+    `python main.py --cid "<your Channel ID>" rx --tts`
+    or
+    `python3 main.py --cid "<your Channel ID>" rx --tts`
+    Example:
+      `python main.py --cid "1" rx --tts`
+      or
+      `python3 main.py --cid "1" rx --tts`
+  Without TTS:
+    `python main.py --cid <your Channel ID> rx`
+    or
+    `python3 main.py --cid <your Channel ID> rx`
+    Example:
+      `python main.py --cid "1" rx --tts`
+      or
+       `python3 main.py --cid "1" rx --tts`
+
 ## Contributors
 <a href="https://github.com/ArtikLamartik/ITRC/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=ArtikLamartik/ITRC&max=750&columns=20" />
+  <img src="https://contributors-img.web.app/image?repo=ArtikLamartik/ITRC&max=2000&columns=20" />
 </a>
